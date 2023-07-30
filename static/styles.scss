@@ -1,4 +1,5 @@
 @import 'navbar';
+@import 'footer';
 
 *{
     box-sizing: border-box;
@@ -9,7 +10,7 @@
 
 //Secciones CSS
 .seccion{
-    background-color: $light;
+    background-color: $back;
 
     &__container{
         display: grid;
@@ -85,11 +86,12 @@
             outline: none;
         }
 
-        &--btn a,i {
+        &--btn a {
             position: relative;
             z-index: 2;
             color: $light;
             text-decoration: none;
+            font-weight: bold;
          
          
         }
@@ -122,3 +124,4 @@
 
     }
 }
+

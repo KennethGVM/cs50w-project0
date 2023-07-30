@@ -1,12 +1,14 @@
 @import 'colors';
 @import 'media-queries';
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-%align-center{
+
+%align-center {
     display: flex;
     align-items: center;
 }
 
-.navbar{
+.navbar {
     background: $light;
     height: 80px;
     display: flex;
@@ -15,20 +17,21 @@
     z-index: 10;
     position: relative;
 
-    &__logo{
-        color:$dark;
+    &__logo {
+        color: $dark;
         cursor: pointer;
         text-decoration: none;
+        font-family: 'Bree Serif', serif;
         font-size: 2rem;
         margin-left: 24px;
         @extend %align-center;
     }
 
-    &__bars{
+    &__bars {
         opacity: 0;
 
-        @include tablet{
-            color:$dark;
+        @include tablet {
+            color: $dark;
             opacity: 1;
             position: absolute;
             top: 22px;
@@ -37,17 +40,17 @@
         }
     }
 
-    &__menu{
+    &__menu {
         @extend %align-center;
         list-style: none;
         text-align: center;
         margin-right: 24px;
 
-        @include tablet{
+        @include tablet {
             display: none;
         }
 
-        &--links{
+        &--links {
             font-weight: bold;
             color: $dark;
             @extend %align-center;
@@ -55,7 +58,7 @@
             text-decoration: none;
             padding: 0 1rem;
 
-            &:hover{
+            &:hover {
                 color: $blue;
                 transition: all 0.3s ease;
             }
@@ -70,10 +73,11 @@
             margin-left: 16px;
             color: $light;
 
-            &:hover{
-                background: $orangeRed;
+            &:hover {
+                background: $dark;
                 transition: all 0.3s ease;
             }
         }
     }
+
 }
