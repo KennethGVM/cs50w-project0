@@ -1,0 +1,91 @@
+.footer{
+    background-color: $dark;
+
+    &__Container{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+
+    &__socialIcons{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__socialIcons a{
+        text-decoration: none;
+        padding: 8px;
+        background-color: $back;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    &__socialIcons a,i{
+        font-size: 1.5em;
+        color: $dark;
+        opacity: 0.9;
+    }
+
+    // Hover effect - Social media icons
+    &__socialIcons a:hover{
+        background-color: $dark;
+        transition: 0.5s;  
+    }
+
+    &__socialIcons a:hover i{
+        color: $back;
+        transition: 0.5s;
+    }
+
+    &__Nav{
+        margin: 30px 0;
+    }
+
+    &__Nav ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__Nav ul li a{
+        color: $back;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    &__Nav ul li a:hover{
+        opacity: 1;
+    }
+
+    &__Bottom{
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+
+    }
+    &__Bottom p{
+        color: $light;
+    }
+
+    .designer{
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+
+        @media(max-width:700px){
+            &__Nav ul{
+                flex-direction: column;
+            }
+    
+            &__Nav ul li{
+                width: 100%;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+}   
