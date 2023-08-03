@@ -55,7 +55,7 @@
   color: #2541b2;
   transition: all 0.3s ease;
 }
-.navbar__menu #button {
+.navbar__menu #buttons {
   padding: 12px 24px;
   border: none;
   outline: none;
@@ -64,7 +64,7 @@
   margin-left: 16px;
   color: #f7f7f7;
 }
-.navbar__menu #button:hover {
+.navbar__menu #buttons:hover {
   background: #111;
   transition: all 0.3s ease;
 }
@@ -343,4 +343,67 @@
 .blog__text a:hover {
   color: #fb4b4e;
   transition: all ease 0.35s;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.contenedor .articulo {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 25px 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  height: 50%;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.contenedor aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+  max-width: 350px;
+  padding-left: 24px;
+}
+.contenedor .card {
+  width: 18rem;
+  margin: 10px;
+  justify-content: center;
+}
+.contenedor .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contenedor .card-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+}
+.contenedor .card-title:hover {
+  color: #fb4b4e;
+  transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .articulo, aside {
+    width: 100%;
+  }
+  .aside {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

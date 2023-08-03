@@ -8,7 +8,7 @@
     font-family: 'Kumb Sans',sans-serif;
 }
 
-//Secciones CSS
+//Secciones CSS Index
 .seccion{
     background-color: $back;
 
@@ -125,6 +125,8 @@
     }
 }
 
+
+// Videojuegos
 .blog{
     display: flex;
     justify-content: center;
@@ -221,6 +223,79 @@
         
     }
 
+}
 
+
+// Artistas
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 24px;
+
+
+    .articulo{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 25px 0;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        height: 50%;
+        width: 100%;
+        max-width: 1300px;
+        padding-right: 24px;
+        padding-left: 24px;
+
+    }
+
+    aside{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px;
+        flex-wrap: wrap;
+        max-width: 350px;
+        padding-left: 24px;
+    }
+
+    .card{
+        width: 18rem;
+        margin: 10px;
+        justify-content: center;
+
+        &-text{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &-title{
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: $dark;
+            text-decoration: none;
+        }
+
+         &-title:hover{
+            color: $orangeRed;
+            transition: all ease 0.3s;
+        }
+    }
 
 }
+@media screen and (max-width: 992px) {
+    .contenedor {
+      flex-direction: column; 
+    }
+    
+    .articulo, aside {
+      width: 100%; 
+    }
+    
+    .aside {
+      justify-content: center; 
+    }
+  }
