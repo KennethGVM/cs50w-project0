@@ -1,18 +1,18 @@
 @import 'navbar';
 @import 'footer';
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumb Sans',sans-serif;
+    font-family: 'Kumb Sans', sans-serif;
 }
 
 //Secciones CSS Index
-.seccion{
+.seccion {
     background-color: $back;
 
-    &__container{
+    &__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -24,8 +24,8 @@
         max-width: 1200px;
         padding-right: 24px;
         padding-left: 24px;
-        
-        @include tablet{
+
+        @include tablet {
             grid-template-columns: 1fr;
             height: 100%;
         }
@@ -34,45 +34,45 @@
             width: 100%;
             line-height: 1.2;
 
-            @include tablet{
+            @include tablet {
                 padding: 5rem 0;
             }
 
-            @include mobile{
+            @include mobile {
                 line-height: 1.5;
             }
         }
 
-        &--left h1{
+        &--left h1 {
             font-size: 4rem;
             color: $blue;
 
-            @include mobile{
+            @include mobile {
                 font-size: 1.5rem;
             }
         }
 
-        &--left h4{
+        &--left h4 {
             font-size: 3rem;
             color: $dark;
 
-            @include mobile{
+            @include mobile {
                 font-size: 2rem;
             }
         }
 
-        &--left p{
+        &--left p {
             font-size: 2rem;
             color: $dark;
             margin-top: 1rem;
             font-weight: 700;
 
-            @include mobile{
+            @include mobile {
                 font-size: 1.5rem;
             }
         }
 
-        &--btn{
+        &--btn {
             font-size: 1rem;
             background-color: $blue;
             padding: 14px 32px;
@@ -92,14 +92,15 @@
             color: $light;
             text-decoration: none;
             font-weight: bold;
-         
-         
+
+
         }
+
         &--btn i {
             margin-right: 15px;
         }
 
-        &--btn:after{
+        &--btn:after {
             position: absolute;
             content: '';
             top: 0;
@@ -111,13 +112,15 @@
             border-radius: 4px;
         }
 
-        &--btn:hover:after{
+        &--btn:hover:after {
             width: 100%;
         }
-        &--right{
+
+        &--right {
             text-align: center;
         }
-        &--img{
+
+        &--img {
             height: 100%;
             width: 100%;
         }
@@ -127,7 +130,7 @@
 
 
 // Videojuegos
-.blog{
+.blog {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,20 +139,20 @@
     border-bottom: 1px solid rgba($color: #000000, $alpha: 1.0);
 
 
-    &__heading{
+    &__heading {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    &__heading h3{
+    &__heading h3 {
         color: $orangeRed;
         font-size: 2.4rem;
         font-weight: 600;
     }
 
-    &__container{
+    &__container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -157,7 +160,7 @@
         flex-wrap: wrap;
     }
 
-    &__box{
+    &__box {
         width: 350px;
         background-color: $light;
         border: 1px solid $dark;
@@ -165,42 +168,42 @@
 
     }
 
-    &__img{
+    &__img {
         width: 100%;
         height: auto;
     }
 
-    &__img img{
+    &__img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
     }
 
-    &__text{
+    &__text {
         padding: 30px;
         display: flex;
         flex-direction: column;
     }
 
-    &__text span{
+    &__text span {
         color: $blue;
         font-size: 0.9rem;
     }
 
-    &__title{
+    &__title {
         font-size: 1.3rem;
         font-weight: 500;
         color: $dark;
         text-decoration: none;
     }
 
-    &__title:hover{
+    &__title:hover {
         color: $orangeRed;
         transition: all ease 0.3s;
     }
 
-    &__text p{
+    &__text p {
         color: $dark;
         font-size: 0.9rem;
         display: -webkit-box;
@@ -211,30 +214,30 @@
         margin: 20px 0px;
     }
 
-    &__text a{
+    &__text a {
         color: $dark;
         text-decoration: none;
         font-weight: bold;
     }
 
-    &__text a:hover{
+    &__text a:hover {
         color: $orangeRed;
         transition: all ease 0.35s;
-        
+
     }
 
 }
 
 
 // Artistas
-.contenedor{
+.contenedor {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 24px;
 
 
-    .articulo{
+    .articulo {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
@@ -249,7 +252,7 @@
 
     }
 
-    aside{
+    aside {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -259,12 +262,12 @@
         padding-left: 24px;
     }
 
-    .card{
+    .card {
         width: 18rem;
         margin: 10px;
         justify-content: center;
 
-        &-text{
+        &-text {
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
@@ -272,30 +275,563 @@
             text-overflow: ellipsis;
         }
 
-        &-title{
+        &-title {
             font-size: 1.3rem;
             font-weight: 500;
             color: $dark;
             text-decoration: none;
         }
 
-         &-title:hover{
+        &-title:hover {
             color: $orangeRed;
             transition: all ease 0.3s;
         }
     }
 
 }
+
 @media screen and (max-width: 992px) {
     .contenedor {
-      flex-direction: column; 
+        flex-direction: column;
     }
-    
-    .articulo, aside {
-      width: 100%; 
+
+    .articulo,
+    aside {
+        width: 100%;
     }
-    
+
     .aside {
-      justify-content: center; 
+        justify-content: center;
     }
-  }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+//ACERCA DE MI INICIO
+#inicio {
+    background-image: url('../images/Polygon.png');
+    // background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../images/Polygon.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+    .contenido .presentacion {
+        max-width: 1100px;
+        height: 100vh;
+        margin: auto;
+        color: $light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .bienvenida {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            font-size: 55px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        h2 span {
+            font-size: 25px;
+            color: $orangeRed
+        }
+
+        .descripcion {
+            max-width: 700px;
+            margin: 25px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid $light;
+            border-radius: 50px;
+            color: $light;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+
+        a:hover {
+            border: 2px solid $dark;
+            background-color: $blue;
+            color: $light;
+        }
+
+
+    }
+
+}
+
+//Seccion sobre mi
+#sobremi {
+    max-width: 1300px;
+    margin: auto;
+    padding: 150px 40px;
+    color: $dark;
+    display: flex;
+
+    .contenedor-foto {
+        max-width: 500px;
+        margin-right: 70px;
+
+        img {
+            padding: 20px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: $light;
+        }
+    }
+
+    .sobremi {
+        margin: 0 40px;
+
+        .titulo-seccion {
+            font-size: 22px;
+            text-transform: uppercase;
+            color: $dark;
+            text-decoration: underline;
+            text-decoration-color: $gris;
+            text-decoration-thickness: 5px;
+        }
+
+        h2 {
+            font-size: 34px;
+            font-weight: bold;
+            margin: 20px 0;
+            letter-spacing: 2px;
+
+            span {
+                color: $orangeRed;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 25px;
+            color: #565656;
+            margin-bottom: 12px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $dark;
+            border-radius: 30px;
+            padding: 10px 20px;
+            border: 1px solid $dark;
+            margin-top: 30px;
+            transition: .5s;
+        }
+
+        a:hover {
+            color: $light;
+            background-color: $blue;
+        }
+    }
+
+}
+
+// Seccion servios
+#servicios {
+    padding: 100px 15px;
+    // margin: 100px;
+    text-align: center;
+    background-color: $light;
+
+    .titulo-seccion {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $dark;
+        text-decoration: underline;
+        text-decoration-color: $gris;
+        text-decoration-thickness: 5px;
+    }
+
+    .fila {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 30px auto;
+
+        .servicio {
+            max-width: 350px;
+            background-color: $back;
+            padding: 30px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: .5s;
+
+            h4 {
+                font-size: 22px;
+                margin-bottom: 25px;
+            }
+
+            .icono {
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: $gris;
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+
+            hr {
+                width: 30%;
+                margin: auto;
+                color: $gris;
+                margin-bottom: 25px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+        }
+
+        .servicio:hover {
+            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+
+        }
+    }
+}
+
+
+//Seccion Skills
+.contenedor-skills {
+    background: linear-gradient(#5a70ebcc, rgba(33, 16, 16, .8)), url("../images/skills.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+
+    .skill {
+        max-width: 600px;
+        margin: 30px auto;
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lista {
+            display: inline-block;
+            margin-right: 20px;
+            height: 10px;
+            width: 10px;
+            background-color: $light;
+        }
+
+        .barra {
+            background-color: #919191;
+            width: 100%;
+            height: 6px;
+            margin: 10px 0;
+
+            //JS
+            .barra-progreso1 {
+                background-color: $back;
+                width: 95%;
+                height: 6px;
+                animation: progreso1 2s forwards;
+            }
+
+            .barra-progreso2 {
+                background-color: $back;
+                width: 90%;
+                height: 6px;
+                animation: progreso2 2s forwards;
+            }
+
+            .barra-progreso3 {
+                background-color: $back;
+                width: 90%;
+                height: 6px;
+                animation: progreso3 2s forwards;
+            }
+
+            .barra-progreso4 {
+                background-color: $back;
+                width: 70%;
+                height: 6px;
+                animation: progreso4 2s forwards;
+            }
+
+            @keyframes progreso1 {
+                0% {
+                    width: 0;
+                }
+
+                100% {
+                    width: 95%;
+                }
+            }
+
+            @keyframes progreso2 {
+                0% {
+                    width: 0;
+                }
+
+                100% {
+                    width: 90%;
+                }
+            }
+
+            @keyframes progreso3 {
+                0% {
+                    width: 0;
+                }
+
+                100% {
+                    width: 90%;
+                }
+            }
+
+            @keyframes progreso4 {
+                0% {
+                    width: 0;
+                }
+
+                100% {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+//Seccion Portafolio
+#portafolio {
+    max-width: 1300px;
+    padding: 100px 0;
+    margin: auto;
+
+    .titulo-seccion {
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $dark;
+        text-decoration: underline;
+        text-decoration-color: $gris;
+        text-decoration-thickness: 5px;
+    }
+
+    .fila {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+
+        .proyecto {
+            max-width: 450px;
+            border: 1px solid $dark;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                filter: grayscale(1);
+                object-fit: cover;
+                transition: .5s;
+            }
+
+            .info {
+                position: absolute;
+                left: 0;
+                background-color: rgba(0, 0, 0, .8);
+                color: $orangeRed;
+                width: 100%;
+                padding: 10px;
+                opacity: 0;
+                bottom: -40px;
+                transition: .5s;
+
+                a {
+                    text-decoration: none;
+                    color: $orangeRed;
+                }
+            }
+        }
+
+        .proyecto:hover img {
+            filter: grayscale(0);
+        }
+
+        .proyecto:hover .info {
+            opacity: 1;
+            bottom: 0;
+        }
+    }
+}
+
+//Seccion contacto
+#contacto {
+    padding: 90px 15px;
+
+    .titulo-seccion {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $dark;
+        text-decoration: underline;
+        text-decoration-color: $gris;
+        text-decoration-thickness: 5px;
+    }
+
+    .contenedor-form {
+        max-width: 1100px;
+        margin: auto;
+
+        .fila {
+            margin-bottom: 15px;
+        }
+
+        .mitad {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 48%;
+            }
+        }
+
+        input,
+        textarea {
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            border: 1px solid $gris;
+        }
+
+        .input-full {
+            width: 100%;
+        }
+    }
+
+    .btn-enviar {
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .btn-enviar:hover {
+        background-color: $blue;
+        color: $light;
+    }
+}
+
+
+//Seccion responsive acerca de mi
+@media screen and (max-width:800px) {
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+
+        .contenedor-foto {
+            max-width: 200px;
+            margin: auto;
+
+            img {
+                padding: 8px;
+            }
+        }
+
+        .sobremi {
+            .titulo-seccion {
+                text-align: center;
+            }
+            h2{
+                font-size: 25px;
+                text-align: center;  
+            }
+        }
+    }
+
+    #servicios{
+        padding: 50px 15px;
+
+        .fila{
+            display: block;
+
+            .servicio{
+                margin: 10px auto;
+            }
+        }
+    }
+
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+
+    #portafolio{
+        padding: 50px 0px;
+
+        .fila{
+            display: block;
+
+            .proyecto{
+                margin: 10px auto;
+            }
+        }
+    }
+
+    #contacto{
+        padding: 50px 15px;
+
+        .contenedor-form .mitad{
+            margin-bottom: 15px;
+            display: block;
+
+            input{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+
+
+}
