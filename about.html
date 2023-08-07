@@ -1,30 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="./static/styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c850fbe5f4.js" crossorigin="anonymous"></script>
     <title>Acerca de mi</title>
 </head>
+
 <body>
     <!-- Barra de navegacion -->
-    <nav class="navbar">
-        <a href="index.html" class="navbar__logo">My Home Page</a>
-        <div class="navbar__bars">
-            <i class="fas fa-bars"></i>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar__logo">My Home Page</a>
+            <div class="navbar__bars">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <div class="navbar__menu">
+                <a href="#inicio" class="navbar__menu--links">INICIO</a>
+                <a href="#sobremi" class="navbar__menu--links">SOBRE MI</a>
+                <a href="#servicios" class="navbar__menu--links">SERVICIOS</a>
+                <a href="#portafolio" class="navbar__menu--links">PORTAFOLIO</a>
+                <a href="#contacto" class="navbar__menu--links">CONTACTO</a>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Seccion inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Kenneth Vanegas</span>, Desarrollador Web</h2>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dolores blanditiis
+                    itaque amet dolorem veritatis sapiente obcaecati asperiores, a consequatur architecto iste explicabo
+                    cumque, quidem magni. Corporis eaque quasi odio.</p>
+                <a href="#portafolio">Portafolio</a>
+            </div>
         </div>
-        <div class="navbar__menu">
-            <a href="index.html" class="navbar__menu--links">Inicio</a>
-            <a href="juegos.html" class="navbar__menu--links">Juegos favoritos</a>
-            <a href="artistas.html" class="navbar__menu--links">Artistas favoritos</a>
-            <a href="about.html" class="navbar__menu--links" id="buttons">Acerca de mi</a>
+    </section>
+
+    <!-- Seccion sobre mi -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="static/images/Kenneth (1) (1).jpg" alt="">
         </div>
-    </nav>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Kenneth Vanegas</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut assumenda iure dolorum autem soluta
+                similique dolorem, praesentium unde odit maxime repudiandae voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- Seccion servicios -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi fugit cupiditate, voluptate
+                    obcaecati delectus impedit non perferendis harum similique.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi fugit cupiditate, voluptate
+                    obcaecati delectus impedit non perferendis harum similique.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi fugit cupiditate, voluptate
+                    obcaecati delectus impedit non perferendis harum similique.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi fugit cupiditate, voluptate
+                    obcaecati delectus impedit non perferendis harum similique.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi fugit cupiditate, voluptate
+                    obcaecati delectus impedit non perferendis harum similique.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi fugit cupiditate, voluptate
+                    obcaecati delectus impedit non perferendis harum similique.</p>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Seccion habilidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1">
+                </div>
+            </div>
+        </div>
 
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2">
+                </div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3">
+                </div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>SASS</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="sass" class="barra-progreso4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion Portafolio -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="static/images/proyecto1.png" alt="">
+                    <div class="info">
+                        <a target="_blank" href="https://umbrellazon.pythonanywhere.com/">
+                            <h4>Ecommerce - Umbrellazon</h4>
+                        </a>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="static/images/proyecto2.png" alt="">
+                    <div class="info">
+                        <h4></h4>
+                        <a target="_blank" href="index.html">
+                            <h4>Home Page</h4>
+                        </a>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="static/images/workin.png" alt="">
+                    <div class="info">
+                        <h4>Trabajo en proceso</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="static/images/working.png" alt="">
+                    <div class="info">
+                        <h4>Trabajo en proceso</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="static/images/workin.png" alt="">
+                    <div class="info">
+                        <h4>Trabajo en proceso</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="static/images/working.png" alt="">
+                    <div class="info">
+                        <h4>Trabajo en proceso</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Correo Electronico" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
 
 
 
@@ -53,6 +314,7 @@
             <p>Copyright &copy;2023; Designed by <span class="designer">Kenneth</span></p>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
