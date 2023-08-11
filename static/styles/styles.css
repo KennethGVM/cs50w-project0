@@ -1,73 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
-.navbar__menu--links, .navbar__menu, .navbar__logo {
-  display: flex;
-  align-items: center;
+.header1 {
+  position: fixed;
+  background: #f7f7f7;
+  height: 70px;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background: #fff;
-  box-shadow: 0 4px 25px -22px black;
-  z-index: 2;
-}
-
-.navbar {
   background: #f7f7f7;
+  width: 100%;
   height: 80px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  z-index: 2;
   padding: 0.5rem calc((100vw - 1200px) / 2) !important;
-  z-index: 10;
-  position: relative !important;
+  box-shadow: 0 4px 25px -22px black;
 }
-.navbar__logo {
-  color: #111;
-  cursor: pointer;
-  text-decoration: none !important;
-  font-family: "Bree Serif", serif;
+header .logo a {
   font-size: 2rem;
-  margin-left: 24px !important;
-}
-.navbar__bars {
-  opacity: 0;
-}
-@media screen and (max-width: 768px) {
-  .navbar__bars {
-    color: #111;
-    opacity: 1;
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-}
-.navbar__menu {
-  list-style: none;
-  text-align: center;
-  margin-right: 24px;
-}
-@media screen and (max-width: 768px) {
-  .navbar__menu {
-    display: none;
-  }
-}
-.navbar__menu--links {
-  font-weight: bold;
-  color: #111;
-  justify-content: center;
+  padding-left: 25px;
+  font-family: "Bree Serif", serif;
   text-decoration: none;
-  padding: 0 1rem;
+  color: #111;
 }
-.navbar__menu--links:hover {
+header nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  align-items: center !important;
+}
+header nav ul li a {
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  color: #111;
+  margin: 0 15px !important;
+  border: 3px solid transparent;
+  transition: 0.2s;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+header nav ul li a:hover {
+  border-bottom-color: #2541b2;
   color: #2541b2;
-  transition: all 0.3s ease;
 }
-.navbar__menu #buttons {
+header nav ul #buttons {
   padding: 12px 24px;
   border: none;
   outline: none;
@@ -75,12 +54,69 @@ header {
   background: #2541b2;
   margin-left: 16px;
   color: #f7f7f7;
+  align-items: center;
 }
-.navbar__menu #buttons:hover {
+header nav ul #buttons:hover {
   background: #111;
   transition: all 0.3s ease;
 }
+header .hamburger {
+  cursor: pointer;
+  display: none;
+}
+header .hamburger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: black;
+  margin-right: 16px;
+}
 
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  header .hamburger {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li {
+    margin: 100px 0;
+  }
+  header nav ul li a {
+    margin: 5px 0;
+    font-size: 25px;
+  }
+  header nav ul li a a:active ~ nav {
+    left: 0;
+  }
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+  .header1 nav {
+    height: 55vh;
+  }
+  .header1 nav ul li {
+    margin: 50px 0;
+  }
+}
 .footer {
   background-color: #111;
 }
@@ -180,7 +216,7 @@ header {
   padding-right: 24px;
   padding-left: 24px;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .seccion__container {
     grid-template-columns: 1fr;
     height: 100%;
@@ -190,7 +226,7 @@ header {
   width: 100%;
   line-height: 1.2;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .seccion__container--left {
     padding: 5rem 0;
   }

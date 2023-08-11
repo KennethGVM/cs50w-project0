@@ -12,23 +12,24 @@
 
 <body>
     <!-- Barra de navegacion -->
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="navbar__logo">My Home Page</a>
-            <div class="navbar__bars">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-            </div>
-            <div class="navbar__menu">
-                <a href="#inicio" class="navbar__menu--links">INICIO</a>
-                <a href="#sobremi" class="navbar__menu--links">SOBRE MI</a>
-                <a href="#servicios" class="navbar__menu--links">SERVICIOS</a>
-                <a href="#portafolio" class="navbar__menu--links">PORTAFOLIO</a>
-                <a href="#contacto" class="navbar__menu--links">CONTACTO</a>
+    <header class="header1">
+        <div class="logo"><a href="index.html">My Home Page</a></div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="active" id="link">INICIO</a></li>
+                <li><a href="#sobremi" id="link">SOBRE MI</a></li>
+                <li><a href="#servicios" id="link">SERVICIOS</a></li>
+                <li><a href="#portafolio" id="link">PORTAFOLIO</a></li>
+                <li><a href="#contacto" id="link">CONTACTO</a></li>
 
-            </div>
+            </ul>
         </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
     </header>
 
 
