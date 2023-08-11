@@ -114,7 +114,10 @@ header .hamburger div {
     height: 55vh;
   }
   .header1 nav ul li {
-    margin: 50px 0;
+    margin: 47px 0;
+  }
+  .header1 nav ul li a {
+    font-size: 17px;
   }
 }
 .footer {
