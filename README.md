@@ -1,7 +1,5 @@
 # cs50w-project0
-Project 0: Homepage
-
-# Proyecto de Home Page
+## Project 0: Homepage
 
 ¡Bienvenido a mi proyecto de Página Personal! En este repositorio, he creado una serie de páginas web interconectadas que reflejan diferentes aspectos de mi interés y habilidades. El proyecto se ha desarrollado utilizando HTML, CSS, Sass y componentes de Bootstrap para asegurar una experiencia de usuario atractiva y responsiva en una variedad de dispositivos.
 
