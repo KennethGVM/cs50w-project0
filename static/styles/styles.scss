@@ -260,6 +260,8 @@
         flex-wrap: wrap;
         max-width: 350px;
         padding-left: 24px;
+        justify-content: center;
+
     }
 
     .card {
@@ -537,6 +539,7 @@ html {
     background-position: center center;
     padding: 100px 0;
     text-align: center;
+    color: $light;
 
     .skill {
         max-width: 600px;
