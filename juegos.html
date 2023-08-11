@@ -12,7 +12,24 @@
 
 <body>
         <!-- Barra de navegacion -->
-        <nav class="navbar">
+        <header>
+            <div class="logo"><a href="index.html">My Home Page</a></div>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="juegos.html">Juegos favoritos</a></li>
+                    <li><a href="artistas.html">Artistas favoritos</a></li>
+                    <li><a href="about.html" id="buttons">Acerca de mi</a></li>
+                </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </header>
+        <!-- <nav class="navbar">
             <a href="index.html" class="navbar__logo">My Home Page</a>
             <div class="navbar__bars">
                 <i class="fas fa-bars"></i>
@@ -23,7 +40,7 @@
                 <a href="artistas.html" class="navbar__menu--links">Artistas favoritos</a>
                 <a href="about.html" class="navbar__menu--links" id="buttons">Acerca de mi</a>
             </div>
-        </nav>
+        </nav> -->
 
 
 
